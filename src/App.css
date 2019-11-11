@@ -38,4 +38,62 @@
   bottom: 0;
   width:100vw;
   background-color: silver;
+  height:33px;
+  box-shadow: inset 1px 0 #fff;
+  border-bottom:1px solid #4e4e4e;
+  text-align: left;
+  padding-top: 2px;
+}
+
+.start_button{
+  box-shadow: outset;
+  text-align:center;
+  vertical-align: middle;
+    display: inline-block;
+    padding: 0px 6px 3px;
+    background-color: silver;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+    min-width: 59px;
+    margin-right: 5px;
+    color: #000;
+    font-size: 13px;
+    margin-left:3px;
+    font-weight: 500;
+}
+.block_bb{
+  width:7px;
+  box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  height:30px; 
+  border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    vertical-align: middle;
+
+}
+.inset_line{
+      border-left: 1px solid #707070;
+    border-right: 1px solid white;
+  width:20px;
+  box-shadow: outset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  height:inherit; 
+  border-top: 1px solid #fff;
+    vertical-align: middle;
+    margin-right:3px;
+
+}
+.time_clock{
+  position:fixed;
+   vertical-align: middle;
+  right:0;
+  margin-right:3px;
+  padding-bottom: 2px;
+    border: inset 1px;
+    font-size:15px;
+    font-weight: 500;
+    box-shadow: 1px 1px 0 #707070 inset, -1px -1px 0 white inset;
 }
