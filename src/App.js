@@ -1,26 +1,30 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Startup from './components/startup'
+import Desktop from './components/desktop'
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={
+      startup:true
+    }
+  }
+  componentDidMount(){
+    let timer = setTimeout(()=>{
+      this.setState({
+        startup:false
+      })
+    console.log('timer',this.state.startup)
+    },8000)
+  }
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {this.state.startup ? <Startup/> : <Desktop/>}
     </div>
   );
+}
 }
 
 export default App;
