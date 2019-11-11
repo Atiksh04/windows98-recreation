@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Startup from './components/startup'
 import Desktop from './components/desktop'
@@ -14,7 +13,7 @@ class App extends React.Component {
     this.terminateProcess=this.terminateProcess.bind(this)
   }
   componentDidMount(){
-    let timer = setTimeout(()=>{
+    setTimeout(()=>{
       this.setState({
         startup:false
       })

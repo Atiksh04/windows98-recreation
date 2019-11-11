@@ -15,9 +15,9 @@ export default class MyDocument extends React.Component{
 		return(
 			<div className="my_document">
 				<div className="my_computer_header text-left">
-					<img src={image1} className="mr-1 myimg" height="15px"/>
+					<img src={image1} alt="" className="mr-1 myimg" height="15px"/>
 					<span >My Documents</span>
-					<button className="close_button" onClick={this.closebutton}><img src={image2} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.closebutton}><img alt="" src={image2} className="myimg" height="15px"/></button>
 				</div>
 				<div className="block_myComputer text-left">
 				<span className="block_bb ml-1 mr-2"></span>
@@ -32,18 +32,18 @@ export default class MyDocument extends React.Component{
 					<span className="block_bb ml-1 mr-2"></span>
 					<span >Address</span>
 					<span className="ml-3 white_area ">
-					<img src={image1} height="17px" className="mr-1"/>
+					<img src={image1} height="17px" alt="" className="mr-1"/>
 					My Documents</span>	
 				</div>
 				<div className="icon_view">
 					<div className="row">
 						<div className="col-lg-3 col-md-3">
-							<img src={image1} className="pt-5 pb-2"/>
+							<img alt="" src={image1} className="pt-5 pb-2"/>
 							<p className="text-dialog">My Documents</p>
 						</div>
 						<div className="col-lg-9 col-md-9 text-left mt-4 view">
-						<span className="mt-2 mr-4"> <img src={image3}/> My Files</span>
-						<span><img src={image4} /> My Photos</span>
+						<span className="mt-2 mr-4"> <img alt="" src={image3}/> My Files</span>
+						<span><img  alt="" src={image4} /> My Photos</span>
 						</div>
 					</div>
 				</div>

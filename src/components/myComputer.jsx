@@ -20,9 +20,9 @@ export default class MyComputer extends React.Component{
 		return(
 			<div className="my_computer">
 				<div className="my_computer_header text-left">
-					<img src={image1} className="mr-1 myimg" height="15px"/>
+					<img   alt="" src={image1} className="mr-1 myimg" height="15px"/>
 					<span >My Computer</span>
-					<button className="close_button" onClick={this.closebutton}><img src={image2} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.closebutton}><img alt="" src={image2} className="myimg" height="15px"/></button>
 				</div>
 				<div className="block_myComputer text-left">
 				<span className="block_bb ml-1 mr-2"></span>
@@ -37,45 +37,45 @@ export default class MyComputer extends React.Component{
 					<span className="block_bb ml-1 mr-2"></span>
 					<span >Address</span>
 					<span className="ml-3 white_area ">
-					<img src={image1} height="17px" className="mr-1"/>
+					<img alt="" src={image1} height="17px" className="mr-1"/>
 					My Computer</span>	
 				</div>
 				<div className="icon_view">
 					<div className="row">
 						<div className="col-lg-3 col-md-3">
-							<img src={image1} className="pt-5 pb-2"/>
+							<img alt="" src={image1} className="pt-5 pb-2"/>
 							<p className="text-dialog">My Computer</p>
 						</div>
 						<div className="col-lg-9 col-md-9 text-left mt-4 view">
 						<div className="mb-5">
 						<span className="mr-2 ">
-							<img src={image3} className="mr-2"/>
+							<img src={image3} alt="" className="mr-2"/>
 							Floppy [A:]
 						</span>
 						<span className="mr-2">
-							<img src={image4} className="mr-2"/>
+							<img src={image4} alt="" className="mr-2"/>
 							Drive [G:]
 						</span>
 						<span className="mr-2 mb-4">
-							<img src={image5} className="mr-2"/>
+							<img src={image5} alt="" className="mr-2"/>
 							CD_Drive
 						</span>
 						</div>	
 						<span className="asd mr-3 mt-4">
-							<img src={image6} className="mr-2"/>
+							<img src={image6} alt="" className="mr-2"/>
 							Printer
 						</span>	
 						<span className="asd mr-3 mt-2">
-							<img src={image7} className="mr-2"/>
+							<img src={image7}  alt="" className="mr-2"/>
 							Control Panel
 						</span>	
 						<span className="asd  mt-2">
-							<img src={image8} className="mr-2"/>
+							<img src={image8} alt="" className="mr-2"/>
 							Dial-Up 
 						</span>	
 						<div className="mt-5">
 						<span className="asd mr-2 mt-2">
-							<img src={image9} className="mr-2"/>
+							<img src={image9} alt="" className="mr-2"/>
 							Scheduled Task 
 						</span>	
 						</div>

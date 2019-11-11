@@ -14,9 +14,9 @@ export default class Calculator extends React.Component{
 		return(
 			<div className="calculator">
 				<div className="my_computer_header text-left">
-					<img src={image1} className="mr-1 myimg" height="15px"/>
+					<img alt="" src={image1} className="mr-1 myimg" height="15px"/>
 					<span >Calculator</span>
-					<button className="close_button" onClick={this.closebutton}><img src={image2} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.closebutton}><img alt="" src={image2} className="myimg" height="15px"/></button>
 				</div>
 				<div className="text-left">
 					<span className="mr-3 ml-2">Edit</span>

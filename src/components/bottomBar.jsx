@@ -11,7 +11,6 @@ import image8 from '../images/users_key-2.png'
 import image9 from '../images/windows_update_small-4.png'
 import image10 from '../images/directory_favorites-0.png'
 import image11 from '../images/directory_open_file_mydocs_2k-2.png'
-import image12 from '../images/search_file_2_cool-5.png'
 import image13 from '../images/executable_gear-0.png'
 import image14 from '../images/close-icon.png'
 export default class BottomBar extends React.Component{
@@ -29,7 +28,6 @@ export default class BottomBar extends React.Component{
 	}
 
 	startClicked(){
-		let value= this.state.clicked
 		this.setState({
 			clicked:!this.state.clicked
 		})
@@ -53,13 +51,13 @@ export default class BottomBar extends React.Component{
 						<p className="text_start_menu">Windows 98</p>	
 					</div>
 					<div className="col-lg-9 col-md-9 text-left">
-						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image9} className="mr-2" height="40px"/>Update</button></div>
-						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image11} className="mr-2" height="40px"/>Documents</button></div>
-						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image10} className="mr-2" height="40px"/>Favourites</button></div>
-						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image11} className="mr-2" height="40px"/>Find</button></div>
-						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image13} className="mr-2" height="40px"/>Run</button></div>
-						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image8} className="mr-2" height="40px"/>Log Off</button></div>
-						<div className=" mt-1"><button className="start_menu_button text-left" onClick={this.showshutDown}><img src={image7} className="mr-2" height="40px"/>ShutDown</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img alt="" src={image9} className="mr-2" height="40px"/>Update</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img alt="" src={image11} className="mr-2" height="40px"/>Documents</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img alt="" src={image10} className="mr-2" height="40px"/>Favourites</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img alt="" src={image11} className="mr-2" height="40px"/>Find</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img alt="" src={image13} className="mr-2" height="40px"/>Run</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img alt="" src={image8} className="mr-2" height="40px"/>Log Off</button></div>
+						<div className=" mt-1"><button className="start_menu_button text-left" onClick={this.showshutDown}><img alt="" src={image7} className="mr-2" height="40px"/>ShutDown</button></div>
 					</div>
 
 				</div>
@@ -71,7 +69,7 @@ export default class BottomBar extends React.Component{
 			<div className="shutdown">
 				<div className="my_computer_header text-left">
 					<span >Shut Down Windows</span>
-					<button className="close_button" onClick={this.showshutDown}><img src={image14} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.showshutDown}><img alt="" src={image14} className="myimg" height="15px"/></button>
 				</div>
 				<div>
 					<p className="mt-5">Do you want to Shut Down?</p>
@@ -84,15 +82,15 @@ export default class BottomBar extends React.Component{
 		}
 			<div className="bottom_bar">
 			<button className="start_button" onClick={this.startClicked}>
-				<img src={logo} className="mr-1"/>
+				<img alt="" src={logo} className="mr-1"/>
 				Start
 			</button>
 			<span className="inset_line"></span>
 			<span className="block_bb mr-1"></span>
-			<img className="mr-1" src={image1}/>
-			<img className="mr-1" src={image2}/>
-			<img className="mr-1" src={image3}/>
-			<img className="mr-1" src={image4}/>
+			<img alt="" className="mr-1" src={image1}/>
+			<img alt="" className="mr-1" src={image2}/>
+			<img alt="" className="mr-1" src={image3}/>
+			<img alt="" className="mr-1" src={image4}/>
 			<span className="block_bb mr-1"></span>
 			<span className="inset_line"></span>
 
@@ -104,8 +102,8 @@ export default class BottomBar extends React.Component{
 
 
 			<span className="time_clock pr-1">
-			<img src={image5} className="mr-1 ml-1"/>
-			<img src={image6} className="mr-1"/>
+			<img alt="" src={image5} className="mr-1 ml-1"/>
+			<img alt="" src={image6} className="mr-1"/>
 			{this.hours}:{this.minutes}
 			</span>
 			</div>
