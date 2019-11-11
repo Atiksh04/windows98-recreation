@@ -10,6 +10,7 @@ import MyComputer from './myComputer.jsx'
 import MyDocument from './myDocuments'
 import RecycleBin from './recycleBin'
 import Notepad from './notepad.jsx'
+import Calculator from './calculator.jsx'
 export default class Desktop extends React.Component{
 	render(){
 		return(
@@ -58,6 +59,7 @@ export default class Desktop extends React.Component{
 			<MyDocument/>
 			<RecycleBin/>
 			<Notepad/>
+			<Calculator/>
 			</div>
 			</div>
 
