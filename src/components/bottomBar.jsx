@@ -6,17 +6,69 @@ import image3 from '../images/user_world-0.png'
 import image4 from '../images/utopia_smiley.png'
 import image5 from '../images/task-scheduler.png'
 import image6 from '../images/audio-okay.png'
+import image7 from '../images/shut_down_normal-2.png'
+import image8 from '../images/users_key-2.png'
+import image9 from '../images/windows_update_small-4.png'
+import image10 from '../images/directory_favorites-0.png'
+import image11 from '../images/directory_open_file_mydocs_2k-2.png'
+import image12 from '../images/search_file_2_cool-5.png'
+import image13 from '../images/executable_gear-0.png'
+import image14 from '../images/close-icon.png'
 export default class BottomBar extends React.Component{
 	constructor(props){
-		super()
+		super(props)
 		this.hours=new Date().getHours()
 		this.minutes= new Date().getMinutes()
+		this.state={
+			clicked:false
+		}
+		this.startClicked = this.startClicked.bind(this)
+	}
+
+	startClicked(){
+		let value= this.state.clicked
+		this.setState({
+			clicked:!this.state.clicked
+		})
 		
 	}
 	render(){
 		return(
+			<div>
+			{this.state.clicked ? 
+			<div className="start_menu">
+				<div className="row">
+					<div className="col-lg-3 col-md-3 blueCol">
+						<p className="text_start_menu">Windows 98</p>	
+					</div>
+					<div className="col-lg-9 col-md-9 text-left">
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image9} className="mr-2" height="40px"/>Update</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image11} className="mr-2" height="40px"/>Documents</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image10} className="mr-2" height="40px"/>Favourites</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image11} className="mr-2" height="40px"/>Find</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image13} className="mr-2" height="40px"/>Run</button></div>
+						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image8} className="mr-2" height="40px"/>Log Off</button></div>
+						<div className=" mt-1"><button className="start_menu_button text-left"><img src={image7} className="mr-2" height="40px"/>ShutDown</button></div>
+					</div>
+
+				</div>
+			</div>
+			:
+			<span></span>
+			}
+			<div className="shutdown">
+				<div className="my_computer_header text-left">
+					<span >Shut Down Windows</span>
+					<button className="close_button"><img src={image14} className="myimg" height="15px"/></button>
+				</div>
+				<div>
+					<p className="mt-5">Do you want to Shut Down?</p>
+					<button className="shutdown_button mr-4">Yes</button>
+					<button className="shutdown_button">No</button>
+				</div>
+			</div>
 			<div className="bottom_bar">
-			<button className="start_button">
+			<button className="start_button" onClick={this.startClicked}>
 				<img src={logo} className="mr-1"/>
 				Start
 			</button>
@@ -35,6 +87,7 @@ export default class BottomBar extends React.Component{
 			<img src={image6} className="mr-1"/>
 			{this.hours}:{this.minutes}
 			</span>
+			</div>
 			</div>
 			)
 	}
