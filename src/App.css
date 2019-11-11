@@ -1,5 +1,7 @@
  .App {
   text-align: center;
+  height: 100vh;
+  width:100vw;
 }
 
 .App-logo {
@@ -110,4 +112,117 @@
 .ic_button:hover{
   border:none;
   cursor:default;
+}
+.row{
+  width:inherit;
+  height:inherit;
+}
+.my_computer{
+    position:fixed;
+    top:10vh;
+    left:30vw;
+    background: #c0c0c0;
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 2px;
+    height:500px;
+    width:600px;
+}
+.my_computer_header{
+      background: linear-gradient(to right, #000080 0%, #1084d0 100%);
+      color:white;
+      height:30px;
+}
+.myimg{
+  vertical-align: middle !important;
+}
+.close_button{
+  position: absolute;
+  right:0;
+  padding-top:0px;
+  margin-right:3px;
+  background-color: silver;
+   box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+}
+.block_myComputer{
+  box-shadow: outset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  height:30px; 
+  border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    vertical-align: middle;
+}
+.block_myComputer1{
+  box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  height:30px; 
+  border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    vertical-align: middle;
+}
+.white_area{
+padding-right:380px;
+box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;  
+background-color: white;
+color:black;
+border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-bottom: 3px;
+  
+}
+.icon_view{
+  height: 370px;
+  width: 592px;
+  background-color: white;
+}
+.text-dialog{
+  font-weight: 700;
+}
+.asd{
+  margin-top:20px;
+}
+.my_document{
+    position:fixed;
+    top:15vh;
+    left:35vw;
+    background: #c0c0c0;
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 2px;
+    height:500px;
+    width:600px;
+}
+.recyclebin{
+    position:fixed;
+    top:20vh;
+    left:40vw;
+    background: #c0c0c0;
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 2px;
+    height:500px;
+    width:600px;
+}
+.notepad{
+    position:fixed;
+    top:15vh;
+    left:45vw;
+    background: #c0c0c0;
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 2px;
+    height:500px;
+    width:600px;
 }
