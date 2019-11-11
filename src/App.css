@@ -26,7 +26,7 @@
 .startup_background{
   height: 100vh;
   width: 100vw;
-  background-image: url(images/windows98.jpg);
+  background-image: url(images/shutdown.jpg);
   background-repeat: none;
   background-size: cover;
 }
@@ -66,6 +66,9 @@
     font-size: 13px;
     margin-left:3px;
     font-weight: 500;
+}
+.start_button:hover{
+cursor: default;
 }
 .block_bb{
   width:7px;
@@ -112,6 +115,11 @@
 .ic_button:hover{
   border:none;
   cursor:default;
+  border-color:teal;
+}
+.ic_button:active{
+  border-color: teal;
+  cursor:default;
 }
 .row{
   width:inherit;
@@ -138,10 +146,14 @@
 .myimg{
   vertical-align: middle !important;
 }
+.close_button:hover{
+  cursor: default;
+}
 .close_button{
   position: absolute;
   right:0;
   padding-top:0px;
+  cursor: default !important;
   margin-right:3px;
   background-color: silver;
    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
@@ -294,6 +306,7 @@ border-top: 1px solid #fff;
   width:180px;
 }
 .start_menu_button:hover{
+  cursor: default;
   color:white;
   background-color: blue;
 }
@@ -312,6 +325,9 @@ border-top: 1px solid #fff;
     border-bottom: 1px solid gray;
     vertical-align: middle;
 }
+.shutdown_button:hover{
+  cursor:default;
+}
 .shutdown{
      position:fixed;
     top:15vh;
@@ -324,4 +340,22 @@ border-top: 1px solid #fff;
     padding: 2px;
     height:200px;
     width:300px;
+}
+.open_window{
+ width:100px;
+  box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+  height:30px; 
+  border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    vertical-align: middle;
+}
+
+.shutdown_background{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/shutdown.jpg);
+  background-repeat: none;
+  background-size: cover;
 }

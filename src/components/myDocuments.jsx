@@ -4,13 +4,20 @@ import image2 from '../images/close-icon.png'
 import image3 from '../images/directory_closed-4.png'
 import image4 from '../images/directory_open_file_mydocs_2k-2.png'
 export default class MyDocument extends React.Component{
+	constructor(props){
+		super(props)
+		this.closebutton= this.closebutton.bind(this)
+	}
+	closebutton(){
+		this.props.close('true')
+	}
 	render(){
 		return(
 			<div className="my_document">
 				<div className="my_computer_header text-left">
 					<img src={image1} className="mr-1 myimg" height="15px"/>
 					<span >My Documents</span>
-					<button className="close_button"><img src={image2} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.closebutton}><img src={image2} className="myimg" height="15px"/></button>
 				</div>
 				<div className="block_myComputer text-left">
 				<span className="block_bb ml-1 mr-2"></span>

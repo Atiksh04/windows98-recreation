@@ -20,9 +20,12 @@ export default class BottomBar extends React.Component{
 		this.hours=new Date().getHours()
 		this.minutes= new Date().getMinutes()
 		this.state={
-			clicked:false
+			clicked:false,
+			shutdown:false
 		}
 		this.startClicked = this.startClicked.bind(this)
+		this.showshutDown = this.showshutDown.bind(this)
+		this.terminate= this.terminate.bind(this)
 	}
 
 	startClicked(){
@@ -31,6 +34,14 @@ export default class BottomBar extends React.Component{
 			clicked:!this.state.clicked
 		})
 		
+	}
+	showshutDown(){
+		this.setState({
+		shutdown:!this.state.shutdown
+		})
+	}
+	terminate(){
+		this.props.callback('terminate')
 	}
 	render(){
 		return(
@@ -48,7 +59,7 @@ export default class BottomBar extends React.Component{
 						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image11} className="mr-2" height="40px"/>Find</button></div>
 						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image13} className="mr-2" height="40px"/>Run</button></div>
 						<div className="mb-3 mt-1"><button className="start_menu_button text-left"><img src={image8} className="mr-2" height="40px"/>Log Off</button></div>
-						<div className=" mt-1"><button className="start_menu_button text-left"><img src={image7} className="mr-2" height="40px"/>ShutDown</button></div>
+						<div className=" mt-1"><button className="start_menu_button text-left" onClick={this.showshutDown}><img src={image7} className="mr-2" height="40px"/>ShutDown</button></div>
 					</div>
 
 				</div>
@@ -56,17 +67,21 @@ export default class BottomBar extends React.Component{
 			:
 			<span></span>
 			}
+			{this.state.shutdown ? 
 			<div className="shutdown">
 				<div className="my_computer_header text-left">
 					<span >Shut Down Windows</span>
-					<button className="close_button"><img src={image14} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.showshutDown}><img src={image14} className="myimg" height="15px"/></button>
 				</div>
 				<div>
 					<p className="mt-5">Do you want to Shut Down?</p>
-					<button className="shutdown_button mr-4">Yes</button>
-					<button className="shutdown_button">No</button>
+					<button className="shutdown_button mr-4" onClick={this.terminate}>Yes</button>
+					<button className="shutdown_button" onClick={this.showshutDown}>No</button>
 				</div>
 			</div>
+			:
+			<span></span> 
+		}
 			<div className="bottom_bar">
 			<button className="start_button" onClick={this.startClicked}>
 				<img src={logo} className="mr-1"/>
@@ -80,6 +95,12 @@ export default class BottomBar extends React.Component{
 			<img className="mr-1" src={image4}/>
 			<span className="block_bb mr-1"></span>
 			<span className="inset_line"></span>
+
+			{this.props.open==='none' ? <span></span> 
+			:
+			<span className="pl-3 pr-3 open_window">{this.props.open}</span>
+			}
+
 
 
 			<span className="time_clock pr-1">

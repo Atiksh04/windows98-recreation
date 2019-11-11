@@ -9,13 +9,20 @@ import image7 from '../images/directory_dial_up_networking_cool-3.png'
 import image8 from '../images/directory_control_panel_cool-2.png'
 import image9 from '../images/directory_closed_history-2.png'
 export default class MyComputer extends React.Component{
+	constructor(props){
+		super(props)
+		this.closebutton= this.closebutton.bind(this)
+	}
+	closebutton(){
+		this.props.close('true')
+	}
 	render(){
 		return(
 			<div className="my_computer">
 				<div className="my_computer_header text-left">
 					<img src={image1} className="mr-1 myimg" height="15px"/>
 					<span >My Computer</span>
-					<button className="close_button"><img src={image2} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.closebutton}><img src={image2} className="myimg" height="15px"/></button>
 				</div>
 				<div className="block_myComputer text-left">
 				<span className="block_bb ml-1 mr-2"></span>

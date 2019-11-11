@@ -2,13 +2,20 @@ import React from 'react'
 import image1 from '../images/notepad-2.png'
 import image2 from '../images/close-icon.png'
 export default class Notepad extends React.Component{
+	constructor(props){
+		super(props)
+		this.closebutton= this.closebutton.bind(this)
+	}
+	closebutton(){
+		this.props.close('true')
+	}
 	render(){
 		return(
 			<div className="notepad">
 			<div className="my_computer_header text-left">
 					<img src={image1} className="mr-1 myimg" height="15px"/>
 					<span >Notepad</span>
-					<button className="close_button"><img src={image2} className="myimg" height="15px"/></button>
+					<button className="close_button" onClick={this.closebutton}><img src={image2} className="myimg" height="15px"/></button>
 				</div>
 				<div className="block_myComputer text-left">
 				<span className="mr-3 ml-2">File</span>
