@@ -355,7 +355,5 @@ border-top: 1px solid #fff;
 .shutdown_background{
   height: 100vh;
   width: 100vw;
-  background-image: url(images/shutdown.jpg);
-  background-repeat: none;
-  background-size: cover;
+  background-color:black;
 }
